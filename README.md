@@ -75,7 +75,7 @@ It speaks their language. It talks like a friend. And it tells them exactly what
 
 ## 👨‍💻 Built By
 
-**Abir Saha** — [@pro1943](https://github.com/pro1943)
+**Pro 1943** — [@pro1943](https://github.com/pro1943)
 
 Built with 💚 for the GenAI Devs Hackathon 2025
 
