@@ -26,6 +26,16 @@
 
 ---
 
+## 🌱 Why This Matters
+
+> "The best time to build tools for the underserved was yesterday. The second best time is now."
+
+MediReach was built for the person in rural Bihar who can't afford a doctor. For the mother in Lagos who doesn't know if her child's fever is serious. For the farmer in Bangladesh who has no clinic nearby.
+
+It speaks their language. It talks like a friend. And it tells them exactly what to do.
+
+---
+
 ## 🚦 How the Urgency System Works
 
 | Badge | Meaning | Example Trigger |
@@ -62,14 +72,28 @@ User → Netlify (React Frontend)
 API keys are stored exclusively on the server. The frontend never touches them.
 
 ---
+## 🤖 AI Stack
 
-## 🌱 Why This Matters
+### Models
+| Model | Provider | Purpose |
+|-------|---------|---------|
+| Gemini 3.1 Flash Lite | Google AI | Core health triage conversations |
 
-> "The best time to build tools for the underserved was yesterday. The second best time is now."
+### AI-Native Development Tools
+| Tool | Purpose |
+|------|---------|
+| Claude (Anthropic) | Primary development assistant — architecture, debugging, prompt engineering |
+| Google AI Studio | API key management, model testing and quota monitoring |
 
-MediReach was built for the person in rural Bihar who can't afford a doctor. For the mother in Lagos who doesn't know if her child's fever is serious. For the farmer in Bangladesh who has no clinic nearby.
+### How AI Accelerated This Build
+- **Claude** was used throughout the entire development process — from initial architecture decisions to debugging complex multilingual badge detection logic
+- **Prompt engineering** was iteratively refined with Claude to make Gemini respond warmly, simply, and always output structured triage labels
+- **Google AI Studio** was used to test model responses and monitor API usage in real time
 
-It speaks their language. It talks like a friend. And it tells them exactly what to do.
+### Key AI Design Decisions
+- Gemini was chosen for its **multilingual capabilities** and **free tier availability** — critical for a tool targeting underserved communities
+- The system prompt was engineered to force **simple language** (10-year-old reading level) across all 12 supported languages
+- Romanized language detection (Hinglish, Benglish) was added after recognizing that target users rarely type in native scripts
 
 ---
 
