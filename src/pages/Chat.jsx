@@ -14,6 +14,15 @@ function formatTime(date) {
   return date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 }
 
+function EmergencyCall() {
+  return (
+    <div className="emergency-call-bar">
+      <p>🚨 This is a medical emergency!</p>
+      <a href="tel:112" className="call-btn">📞 Call Emergency Services — 112</a>
+    </div>
+  );
+}
+
 const URGENCY_RANK = { "badge-red": 3, "badge-yellow": 2, "badge-green": 1 };
 
 export default function Chat({ t, langCode, onChangeLang, onHome }) {
@@ -74,6 +83,8 @@ export default function Chat({ t, langCode, onChangeLang, onHome }) {
           {currentBadge.label}
         </div>
       )}
+
+      {currentBadge?.cls === "badge-red" && <EmergencyCall />}
 
       <div className="chat-window">
         {messages.map((msg, i) => (

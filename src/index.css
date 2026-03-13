@@ -404,3 +404,36 @@ main { flex: 1; }
   0%, 100% { opacity: 1; }
   50% { opacity: 0.7; }
 }
+
+.emergency-call-bar {
+  background: #fee2e2;
+  border-top: 2px solid #ef4444;
+  border-bottom: 2px solid #ef4444;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.emergency-call-bar p {
+  font-weight: 700;
+  color: #991b1b;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.call-btn {
+  background: #ef4444;
+  color: white;
+  border-radius: 100px;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  display: block;
+  transition: all 0.2s;
+  animation: pulse-red 1.5s infinite;
+}
+
+.call-btn:hover { background: #dc2626; }
